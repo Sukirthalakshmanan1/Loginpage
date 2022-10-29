@@ -1,0 +1,64 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@{
+    Layout = null;
+}
+
+<html>
+<head>
+    <title>Login Success</title>
+    <style>
+         body {
+            margin: 0;
+            padding: 0;
+            background-color:#00FF7F;
+            height: 100vh;
+        }
+        #aa {
+            border-radius: 25px;
+            border: 2px solid red;
+            padding: 50px 125px;
+            width: 250px;
+            height: 100px;
+            color: forestgreen;
+            text-align: center;
+            font-size: 25px;
+            margin-left: 30%;
+        }
+    </style>
+</head>
+<body>
+    <h2>Dashboard</h2>
+    <!----<div id="aa">@ViewBag.message</div>-->
+    @ViewBag.message 
+
+    <div class="row">
+    <div class="col-md-4">
+          <h2>
+           Beware of Phising Attacks
+        </h2>
+        <p>
+            Phishing is a fraudulent attempt, usually made through email, phone calls, SMS etc seeking your personal and confidential information.
+State Bank or any of its representative never sends you email/SMS or calls you over phone to get your personal information,password or one time SMS (high security) password. Any such e-mail/SMS or phone call is an attempt to fraudulently withdraw money from your account through Internet Banking. Never respond to such email/SMS or phone call. Please report immediately on report.phishing@sbi.co.in if you receive any such email/SMS or Phone call. 
+Please lock your user access immediately, if you have accidentally revealed your credentials.Click here to lock.
+        </p>
+        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Services</h2>
+        <p>
+        The URL in your browser address bar begins with "https".
+The address or status bar displays the padlock symbol.
+Click the padlock to view and verify the security certificate.
+        </p>
+        </div>
+
+  </div>
+    <div>
+    @Html.ActionLink("Log off", "Login")
+    </div>
+</body>
+</html>
